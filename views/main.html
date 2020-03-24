@@ -1,0 +1,63 @@
+<style>
+#profileImg 
+{
+  height:50px;
+  width:50px;
+}
+#profileImg img
+{
+  max-width:100%; 
+  max-height:100%;
+  margin:auto;
+  display:block;
+}
+
+</style>
+<div ng-controller="MainCtrl" ng-init="loadData()">
+<h4>IITK {{LOCAL_SETTINGS.batch}} junta, please add your information at <a href="{{LOCAL_SETTINGS.formLink}}" target="_blank">here</a> </h4>
+<div class="container">
+<div class="form-group">
+<input type="text" class="form-control" ng-model="searchText" placeholder="Search Text" ng-show="!showLoad">
+</div>
+</div>
+<table class="table table-striped">
+	<thead>
+		<tr>
+      <td></td>
+      <td ng-click="sort('Name')" style="cursor:pointer"><b>Name</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Name'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td ng-click="sort('Position')" style="cursor:pointer"><b>Position</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Position'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td ng-click="sort('Organization')" style="cursor:pointer"><b>Organization</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Organization'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td ng-click="sort('Location')" style="cursor:pointer"><b>Location</b>
+		<span class="glyphicon sort-icon" ng-show="sortKey=='Location'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
+	  </td>
+      <td><b>Facebook Profile</b>
+	  </td>
+      <td><b>LinkedIn Profile</b>
+	  </td>
+    </tr>
+
+	</thead>
+  <tbody dir-paginate="value in studentData | orderBy:sortKey:reverse | filter:customFilter(searchText) | itemsPerPage:LOCAL_SETTINGS.paginateNumEntries" >
+    <tr>
+      <th scope="row"><div id="profileImg" afkl-lazy-image="{{value.Link_To_Profile_Image}}"></div></th>
+      <td>{{value.Name}}({{value.Department}})</td>
+      <td>{{value.Position}}</td>
+      <td>{{value.Organization}}</td>
+      <td>{{value.Location}}</td>
+      <td><a href="{{value.Facebook_Profile}}" target="_blank"><img src="logos/fb.png" height="40"></a></td>
+      <td><a href="{{value.Linkedin_Profile}}" target="_blank"><img src="logos/linkedin.png" height="40"></a></td>
+    </tr>
+    <tr>
+    	<td colspan="100%">{{value.History_and_brief_bio}}</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+<dir-pagination-controls direction-links="true" boundary-links="true"></dir-pagination-controls>

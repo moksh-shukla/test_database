@@ -1,0 +1,39 @@
+{
+  "name": "iitky12",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sid17/iitky12",
+  "authors": [
+    "Akshay Aggarwal <aks.agg94@gmail.com>",
+    "Dhruv Singal <singaldhruv.ds@gmail.com>",
+    "Siddhant Manocha <siddhantmanocha1994@gmail.com>",
+    "Peeyush Agarwal <peeyushagarwal1994@gmail.com>",
+    "Pranav Maneriker <pranavmane@gmail.com>",
+    "Proneet Verma <proneet11@gmail.com>"
+  ],
+  "description": "Batch Website, see settings.json for more details",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "none",
+  "dependencies": {
+    "afkl-lazy-image": "0.3.1",
+    "angular-cookies": "1.2.16",
+    "angular-resource": "1.2.16",
+    "angular-route": "1.2.16",
+    "angular-sanitize": "1.2.16",
+    "bootstrap": "~3.3.6",
+    "tabletop": "~1.4.3",
+    "angular-utils-pagination": "~0.11.1",
+    "cloudinary_ng": "~1.0.0",
+    "ng-file-upload": "^11.0.2",
+    "angular-animate": "1.4.x"
+  },
+  "ignore": [
+    "src/*",
+    "database/*"
+  ],
+  "resolutions": {
+    "angular": "1.4.x"
+  }
+}

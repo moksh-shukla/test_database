@@ -1,0 +1,17 @@
+<div>
+  In case of any query, please contact
+<table class="table table-striped">
+  <thead>
+     <tr>
+      <td>Name</td>
+      <td>Email</td>
+    </tr>
+  </thead>
+  <tbody ng-repeat="value in SETTINGS.contacts">
+    <tr>
+      <th scope="row">{{value.name}}</th>
+      <td>{{value.email}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

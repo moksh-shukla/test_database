@@ -1,0 +1,32 @@
+{
+	"collegeName": "Indian Institute of Technology, Kanpur",
+	"batch": "Y12",
+	"collegeLogoURL": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/IIT_Kanpur_Logo.svg/1024px-IIT_Kanpur_Logo.svg.png",
+	"spreadsheetLink": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSon6f_413nx01XzBSuwG-cYjFNhuRp9v-f0qQdI8kkDG40AJqApgy8u_mkOC-lVdncc5XhIhvrPr9O/pubhtml?gid=842838221&single=true",
+	"formLink":"http://bit.ly/iitky12",
+	"about": "The whereabouts of the Y12 batch of IIT Kanpur. Inspired by (www.cs.cmu.edu/~mahim/class2001/). In case of any queries or suggestions, contact us.",
+	"defaultSortEntriesBy":"Name",
+	"defaultOrderDescending":false,
+	"paginateNumEntries":10,
+	"searchInKeys": ["Name", "Position", "Organization", "Location", "History_and_brief_bio","Department"],
+	"defaultProfileImage":"logos/default.png",
+	"contacts": [{
+		"name": "Akshay Aggarwal",
+		"email": "aks.agg94@gmail.com"
+	}, {
+		"name": "Dhruv Singal",
+		"email": "singaldhruv.ds@gmail.com"
+	}, {
+		"name": "Siddhant Manocha",
+		"email": "siddhantmanocha1994@gmail.com"
+	}, {
+		"name": "Peeyush Agarwal",
+		"email": "peeyushagarwal1994@gmail.com"
+	}, {
+		"name": "Pranav Maneriker",
+		"email": "pranavmane@gmail.com"
+	},{
+		"name": "Proneet Verma",
+		"email": "proneet11@gmail.com"
+	}]
+}
